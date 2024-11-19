@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correcto</title>
+    <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="/docs/css/correct.css">
+</head>
+<body>
+        <!-- Barra de navegacion -->
+        <nav class="navegacion" id="navegacion">
+            <ul>
+                <li><a href="/docs/pages/main.html">HTML</a></li>
+                <li><a href="/docs/pages/">CSS</a></li>
+                <li><a href="/docs/pages/">JAVASCRIPT</a></li>
+            </ul>
+        </nav>
+    <!-- Contenedor principal -->
+    <div class="parent">
+        <div class="div1">
+            <!-- Lista de preguntas sobre HTML -->
+            <ol>
+                <h2>Preguntas sobre HTML</h2>
+                <li>Encabezados</li>
+                <li>Parrafos</li>
+                <li>Imagenes</li>
+                <li>Enlaces</li>
+            </ol>
+        </div>
+        <div class="div2">
+            <!-- Pregunta sobre el elemento HTML que define un encabezado -->
+            <h3>¿Cual es el elemento html que define un encabezado?</h3>
+            <p>Un encabezado en HTML es como el título de una sección. 
+            Sirve para organizar el contenido y darle importancia a las 
+            partes más relevantes de tu página web. Hay seis niveles de 
+            encabezados</p>
+            <!-- Opciones de respuesta -->
+            <a href="/docs/pages/correct.html"><button class="option" id="answer">h1</button></a>
+            <button class="option" id="option">header</button>
+            <button class="option" id="option">head</button>
+            <button class="option" id="option">title</button>
+        </div>
+        <div class="div3">
+            <!-- Mensaje de opción correcta -->
+            <p class="titulo">Opción correcta.</p>
+            <!-- Botones para avanzar y mostrar explicación -->
+            <button class="explanation-button" onclick="nextQuestion()">Siguiente pregunta</button>
+            <button class="next-question-button" onclick="showExplanation()">¿Por qué es correcta?</button>
+            <script>
+            // Función para avanzar a la siguiente pregunta
+            function nextQuestion() {
+                window.location.href = "/docs/pages/second.html";
+            }
+            </script>
+        </div>
+    </div>
+</body>
+</html>
